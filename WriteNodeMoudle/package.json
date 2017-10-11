@@ -1,0 +1,14 @@
+{
+  "name": "writenodemoudle",
+  "version": "1.0.0",
+  "description": "Part of Luke's screencast series",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chuong Luke",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "*"
+  }
+}
