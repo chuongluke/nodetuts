@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Page Title</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+		<script type="text/javascript" src="core.js"></script>
+	</head>
+	<body ng-app="demos_cfg">
+		<div id="container">
+			<span id="header">CodeNode</span>
+			<span id="demo">Demo's</span>
+			<input id="search" ng-controller="main_control" size="40" type="search" placeholder="Search for link, demo and download!!"></input>
+			<table id="showit" ng-init="loaded_demos">
+				<tbody>
+					<tr>
+						<td>Title</td>
+						<td>Link</td>
+						<td>Link Demo</td>
+						<td>Link download</td>
+					</tr>
+					<tr ng-repeat="data in loaded_demos">
+						<td>{{data.title}}</td>
+						<td>
+							<button id="article">
+								<a href="{{data.link}}" target="_blank">Read Article</a>
+							</button>
+						</td>
+						<td>
+							<button id="demobutton">
+								<a href="{{data.demo_link}}">Live Demo</a>
+							</button>
+						</td>
+						<td>
+							<button id="downloadbutton">
+								<a href="{{data.download}}"></a>
+							</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
