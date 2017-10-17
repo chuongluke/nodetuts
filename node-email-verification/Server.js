@@ -7,8 +7,8 @@ var stmpTransport = nodemailer.createTransport({
 	service: "gmail",
 	host: 'stmp.gmail.com',
 	auth: {
-		user: "chuongluke@gmail.com",
-		pass: "Chu0ngluke"
+		user: "",
+		pass: ""
 	}
 });
 

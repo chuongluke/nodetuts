@@ -1,0 +1,32 @@
+{
+	"name": "nodecalc",
+	"version": "0.0.1",
+	"description": "This package will return addition of two numbers",
+	"main": "./lib/index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chuongluke/nodetuts"
+	},
+	"keywords": [
+		"sweet-lstat"
+	],
+	"author": {
+		"name": "Chuong luke"
+	},
+	"readme": "# Add to numbera (for learning purpose)nnDemo module for codeforgeek.com tutorialnn## Install npm install nodecalcnnn## APInn### -calc(a, b, p) n where, na=number, nb=number, p=operator",
+	"readmeFilename": "README.md",
+	"dependencies": {},
+	"devDependencies": {},
+	"optionalDependencies": {},
+	"engines": {
+		"node": "*"
+	},
+	"bugs": {
+		"url": "https://github.com/chuongluke/nodetuts/issues"
+	},
+	"homepage": "https://github.com/chuongluke/nodetuts",
+	"_id": "nodecalc@0.0.1",
+	"scripts": {},
+	"_shasum":  "db9a913c2f8893d477472647917493f2c0949adb",
+	"_from": "nodecalc@"
+}
