@@ -15,7 +15,9 @@
 	},
 	"readme": "# Add to numbera (for learning purpose)nnDemo module for codeforgeek.com tutorialnn## Install npm install nodecalcnnn## APInn### -calc(a, b, p) n where, na=number, nb=number, p=operator",
 	"readmeFilename": "README.md",
-	"dependencies": {},
+	"dependencies": {
+		"express": "latest"
+	},
 	"devDependencies": {},
 	"optionalDependencies": {},
 	"engines": {
@@ -27,6 +29,6 @@
 	"homepage": "https://github.com/chuongluke/nodetuts",
 	"_id": "nodecalc@0.0.1",
 	"scripts": {},
-	"_shasum":  "db9a913c2f8893d477472647917493f2c0949adb",
+	"_shasum": "db9a913c2f8893d477472647917493f2c0949adb",
 	"_from": "nodecalc@"
 }
