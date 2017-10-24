@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Page Title</title>
+
+		<!-- Bootstrap CSS -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var email, pass;
+				$('#submit').click(function(){
+					email = $('#email').val();
+					pass = $('#pass').val();
+
+					$.post("http://localhost:3000/login", 
+						{email: email, pass: pass}, function(data){
+							if(data === 'done'){
+								window.location.href = "/admin";
+							}
+					});
+				});
+			});
+
+			function callbackFunc(response) {
+			    console.log('do something with the responseresponse');
+			    console.log(response);
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" name="email" id="email" placeholder="Type your email" />
+		<br>
+		<input type="password" name="password" id="pass" placeholder="Type your password"/>
+		<br>
+		<button id="submit" type="button" value="Submit">Submit</button>
+		
+	</body>
+</html>
