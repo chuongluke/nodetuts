@@ -6,4 +6,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/createzone', function(req, res, next){
+	res.render('createzone', {title: 'Create Zone'});
+});
+
+router.get('/createcomment', function(req, res, next){
+	res.render('createcomment', {title: 'Create Comment'});//1:27:25
+});
+
 module.exports = router;

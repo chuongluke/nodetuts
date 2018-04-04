@@ -1,0 +1,58 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/local/bin/npm', 'i', '-g', 'webpack' ]
+2 info using npm@1.3.22
+3 info using node@v6.13.1
+4 verbose cache add [ 'webpack', null ]
+5 verbose cache add name=undefined spec="webpack" args=["webpack",null]
+6 verbose parsed url Url {
+6 verbose parsed url   protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'webpack',
+6 verbose parsed url   path: 'webpack',
+6 verbose parsed url   href: 'webpack' }
+7 silly lockFile 057b6197-webpack webpack
+8 verbose lock webpack /home/luke/.npm/057b6197-webpack.lock
+9 silly lockFile 057b6197-webpack webpack
+10 silly lockFile 057b6197-webpack webpack
+11 verbose addNamed [ 'webpack', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 9c8dd08b-webpack webpack@
+14 verbose lock webpack@ /home/luke/.npm/9c8dd08b-webpack.lock
+15 silly addNameRange { name: 'webpack', range: '*', hasData: false }
+16 verbose url raw webpack
+17 verbose url resolving [ 'https://registry.npmjs.org/', './webpack' ]
+18 verbose url resolved https://registry.npmjs.org/webpack
+19 info trying registry request attempt 1 at 3:32:21 PM
+20 http GET https://registry.npmjs.org/webpack
+21 info retry will retry, error on last attempt: Error: unable to get local issuer certificate
+22 info trying registry request attempt 2 at 3:32:32 PM
+23 http GET https://registry.npmjs.org/webpack
+24 info retry will retry, error on last attempt: Error: unable to get local issuer certificate
+25 info trying registry request attempt 3 at 3:33:32 PM
+26 http GET https://registry.npmjs.org/webpack
+27 silly lockFile 9c8dd08b-webpack webpack@
+28 silly lockFile 9c8dd08b-webpack webpack@
+29 error Error: unable to get local issuer certificate
+29 error     at Error (native)
+29 error     at TLSSocket.<anonymous> (_tls_wrap.js:1092:38)
+29 error     at emitNone (events.js:86:13)
+29 error     at TLSSocket.emit (events.js:185:7)
+29 error     at TLSSocket._finishInit (_tls_wrap.js:609:8)
+29 error     at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:439:38)
+30 error If you need help, you may report this *entire* log,
+30 error including the npm and node versions, at:
+30 error     <http://github.com/isaacs/npm/issues>
+31 error System Linux 4.13.0-37-generic
+32 error command "/usr/bin/node" "/usr/local/bin/npm" "i" "-g" "webpack"
+33 error cwd /home/luke/Documents/nodetuts/yak-yik
+34 error node -v v6.13.1
+35 error npm -v 1.3.22
+36 error code UNABLE_TO_GET_ISSUER_CERT_LOCALLY
+37 verbose exit [ 1, true ]
